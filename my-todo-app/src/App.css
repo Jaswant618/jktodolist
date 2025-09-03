@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+.container.dark {
+  background: linear-gradient(135deg, #448d93, #252b86);
+  color: white;
+}
+.container.light {
+  background: rgb(235, 255, 119);
+  color: rgb(2, 255, 69);
+}
+.todo-box {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  width: 420px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: background 0.3s ease;
+}
+.container.light .todo-box {
+  background: #f9f9f9;
+  color: black;
+}
+.todo-box h2 {
+  margin: 0;
+}
+.mode-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.input-row {
+  display: flex;
+  margin: 15px 0;
+}
+.input-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+.input-row button {
+  margin-left: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.filter-row button {
+  flex: 1;
+  margin: 0 5px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  background: transparent;
+  color: inherit;
+  padding: 8px;
+  cursor: pointer;
+}
+.filter-row .active {
+  background: #007bff;
+  color: white;
+  border: none;
+}
+.task-list {
+  margin-top: 10px;
+}
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 6px;
+  border-bottom: 1px solid #333;
+  flex-wrap: wrap;
+}
+.task-row span {
+  cursor: pointer;
+}
+.task-row span.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.task-row.important {
+  background: rgba(255, 215, 0, 0.15);
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  max-width: 240px;
+}
+.actions input[type="datetime-local"] {
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  max-width: 150px;
+}
+.actions small {
+  display: block;
+  font-size: 11px;
+  margin-top: 2px;
+  color: rgb(245, 143, 11);
+}
+.actions button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+}

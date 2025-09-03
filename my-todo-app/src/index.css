@@ -1,0 +1,114 @@
+/* light mode */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+/* container */
+.to-do-list {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* dark mode */
+.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.dark h1 {
+  color: #00c6ff;
+}
+
+h1 {
+  text-align: center;
+  color: #ff6f61;
+}
+
+/* dark/light button */
+.mode-button {
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background: #00c6ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* add section */
+.add-task-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task-section input {
+  padding: 8px;
+  border-radius: 5px;
+  width: 300px;
+  border: 1px solid #ccc;
+}
+
+.add-task-section button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* filters */
+.filter-buttons button {
+  margin: 0 5px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #f0f0f0;
+}
+
+.filter-buttons .active-filter {
+  background: #00c6ff;
+  color: #fff;
+  border: none;
+}
+
+/* table */
+.tasks-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tasks-table th, .tasks-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tasks-table th {
+  background: #f4f4f4;
+}
+
+.dark .tasks-table th {
+  background: #333;
+  color: #eee;
+}
+
+/* important row */
+.important-task {
+  background: #fff8dc;
+}
+
+.dark .important-task {
+  background: #555;
+  color: #fff;
+}
